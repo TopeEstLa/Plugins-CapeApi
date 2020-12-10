@@ -20,7 +20,7 @@ class ApiController extends Controller
         $userId = User::where('id', $user)->orWhere('name', $user)->value('id');
 
         if ($userId === null || ! Storage::disk('public')->exists("capes/{$userId}.png")) {
-            return response()->file(base_path().'/plugins/cape-api/assets/img/steve.png', [
+            return response()->file(base_path().'/plugins/cape-api/assets/img/default.png', [
                 'Content-Type' => 'image/png',
             ]);
         }

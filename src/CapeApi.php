@@ -7,7 +7,7 @@ class CapeAPI
     public static function getConstraints()
     {
         $width = (int) setting('cape.width', 64);
-        $height = (int) setting('cape.height', 64);
+        $height = (int) setting('cape.height', 32);
         $scale = (int) setting('cape.scale', 1);
 
         if ($scale === 1) {
