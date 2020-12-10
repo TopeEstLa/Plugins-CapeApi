@@ -11,7 +11,7 @@
             }
             const file = capeInput.files[0];
             if (file.name !== undefined && file.name !== '') {
-                document.getElementById('capeabel').innerText = file.name;
+                document.getElementById('capeLabel').innerText = file.name;
             }
             const reader = new FileReader();
             reader.onload = function (e) {

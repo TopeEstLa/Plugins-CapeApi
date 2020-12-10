@@ -26,7 +26,7 @@ class CapeApiController extends Controller
     public function update(Request $request)
     {
         $this->validate($request, [
-            'cape' => ['required', 'mimes:png', SkinAPI::getRule()],
+            'cape' => ['required', 'mimes:png', CapeAPI::getRule()],
         ]);
 
         $request->file('cape')->storeAs('cape', "{$request->user()->id}.png", 'public');
