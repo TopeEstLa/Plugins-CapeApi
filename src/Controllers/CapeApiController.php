@@ -19,7 +19,7 @@ class CapeApiController extends Controller
     public function index(Request $request)
     {
         return view('cape-api::index', [
-            'skinUrl' => route('cape-api.api.show', $request->user()->id).'?v='.Str::random(4),
+            'capeUrl' => route('cape-api.api.show', $request->user()->id).'?v='.Str::random(4),
         ]);
     }
 
