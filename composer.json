@@ -1,0 +1,10 @@
+{
+ "name": "azuriom/cape-api",
+ "type": "azuriom-plugin",
+ "description": "Plugin for Azuriom",
+ "autoload": {
+  "psr-4": {
+   "Azuriom\\Plugin\\CapeApi\\": "src/"
+  }
+ }
+}

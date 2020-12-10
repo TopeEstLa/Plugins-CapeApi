@@ -1,0 +1,14 @@
+ {
+ "id": "cape-api",
+ "name": "CapeApi",
+ "description": "Add a cape API for your Minecraft server.",
+ "version": "0.1.3",
+ "url": "https://delta-corp.fr",
+ "authors": [
+     "Javdu10, TopeEstLa"
+ ],
+ "providers": [
+     "\\Azuriom\\Plugin\\CapeApi\\Providers\\CapeApiServiceProvider",
+     "\\Azuriom\\Plugin\\CapeApi\\Providers\\RouteServiceProvider"
+ ]
+}
